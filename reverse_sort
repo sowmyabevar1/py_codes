@@ -1,0 +1,6 @@
+list = [1, 5, 6, 3, 7, 4, 2]
+list.sort()
+new = []
+for i in range(len(list) - 1, -1, -1):
+    new.append(list[i])
+print(new)
