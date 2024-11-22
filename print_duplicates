@@ -1,0 +1,9 @@
+arr = [1, 2, 3, 4, 5, 5, 4]
+distinct = []
+duplicate = []
+for i in arr:
+    if i not in dist:
+        distinct.append(i)
+    elif i not in dup:
+        duplicate.append(i)
+print(duplicate)
