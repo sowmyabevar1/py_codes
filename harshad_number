@@ -1,0 +1,11 @@
+a = 18
+t = a
+sum = 0
+while a > 0:
+    rem = a % 10
+    a = a//10
+    sum += rem 
+if t % sum == 0:
+    print("yes its harshad num")
+else:
+    print("no its not a harshad num")
