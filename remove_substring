@@ -1,0 +1,13 @@
+string = "hello world hello"
+r = "lo"
+n = len(string)
+m = len(r)
+i = 0
+res = ""
+while i < n:
+    if string[i : i + m] == r:
+        i += m
+    else:
+        res += string[i]
+        i += 1
+print(res)
