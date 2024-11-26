@@ -1,0 +1,7 @@
+def gen_two_powers(n):
+    powers = []
+    for i in range(n + 1):
+        powers.append(2 ** i)
+    return powers
+n = int(input("enter a value:"))
+print(gen_two_powers(n))
