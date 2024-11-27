@@ -1,0 +1,14 @@
+def rev_number(n):
+    while True:  
+        k = n  
+        rev = 0  
+        while n > 0:  
+            rem = n % 10  
+            rev = rev * 10 + rem 
+            n = n // 10  
+        if k == rev:  
+            return k  
+        else:
+            n = k + rev  
+print(rev_number(1234))  
+print(rev_number(1473))
