@@ -1,0 +1,42 @@
+def divide_chunks(l, n):
+    result = []  
+    chunk = []   
+    index = 0    
+    
+    for element in l:  
+        chunk.append(element) 
+        index += 1  
+
+        if index % n == 0 or index == len(l):
+            result.append(chunk)  
+            chunk = []  
+    
+    return result 
+
+my_list = ['geeks', 'for', 'geeks', 'like', 'sowmya', 'laxmi', 'bevra', 'more',]
+
+n = 3
+
+x = divide_chunks(my_list, n)
+print(x)
+def divide_chunks(l, n):
+    result = []  
+    chunk = []   
+    index = 0    
+    
+    for element in l:  
+        chunk.append(element) 
+        index += 1  
+
+        if index % n == 0 or index == len(l):
+            result.append(chunk)  
+            chunk = []  
+    
+    return result 
+
+my_list = ['geeks', 'for', 'geeks', 'like', 'sowmya', 'laxmi', 'bevra', 'more',]
+
+n = 3
+
+x = divide_chunks(my_list, n)
+print(x)
