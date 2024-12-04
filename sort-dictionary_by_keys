@@ -1,0 +1,10 @@
+d = {'ravi': 10, 'rajnish': 90, 'sanjeev': 15}
+
+sorted_keys = sorted(d)
+print(sorted_keys)
+sd = {}
+
+for key in sorted_keys:
+    sd[key] = d[key]
+    print(d[key])
+print(sd)
