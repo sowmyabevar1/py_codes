@@ -1,0 +1,26 @@
+def decimal_to_binary(number):
+    if number == 0:
+        return "0"
+    binary = ""
+    while number > 0:
+        binary = str(number % 2) + binary
+        number = number // 2
+    return binary
+
+def decimal_to_hexadecimal(number):
+    if number == 0:
+        return "0"
+    hex_digits = "0123456789abcdef"
+    hexadecimal = ""
+    while number > 0:
+        hexadecimal = hex_digits[number % 16] + hexadecimal
+        number = number // 16
+    return hexadecimal
+
+decimal_number = int(input("Enter a decimal number: "))
+
+binary = decimal_to_binary(decimal_number)
+hexadecimal = decimal_to_hexadecimal(decimal_number)
+
+print(binary)
+print(hexadecimal)
