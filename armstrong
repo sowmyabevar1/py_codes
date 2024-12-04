@@ -1,0 +1,15 @@
+def armstrong(num):
+    sum = 0 
+    num = str(num)
+    l = len(num)
+    for i in num:
+        sum = sum + int(i) ** l
+    num = int(num)
+    if (num == sum):
+        return "True"
+    else:
+        return "False"
+
+print(armstrong(153))
+print(armstrong(390))
+print(armstrong(407))
