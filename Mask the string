@@ -1,0 +1,6 @@
+def string(s):
+    return '*' * (len(s) - 5) + s[-5:]
+
+print(string("kdi39323swe"))
+print(string("12345abcdef"))
+print(string("12345"))
